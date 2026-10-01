@@ -5,8 +5,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbearia - Barber Club</title>
     <link rel="shortcut icon" href="favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>test</h1>
+    <header>
+        <h1>BARBER CLUB</h1>
+
+        <!-- Checkbox invisível para controlar o estado do menu -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+        <!-- Label que funciona como o botão do menu hambúrguer -->
+        <label for="menu-toggle" class="mobile-menu-icon" aria-label="Abrir Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- Navegação principal -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="pages/servicos.html">Serviços</a></li>
+                <li><a href="pages/profissionais.html">Profissionais</a></li>
+                <li><a href="pages/planos.html">Planos</a></li>
+                <li><a href="pages/agendamento.html" class="btn-agendar">Agendar Horário</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+            <!-- SEÇÃO HERO / BANNER PRINCIPAL -->
+        <section id="inicio" class="hero">
+            <figure>
+                <img src="imagens/banner-inicio.png" alt="Barber Club Banner - Cadeira de barbeiro e tesouras.">
+            </figure>
+        </section>
+
+        <!-- SEÇÃO NOSSOS PRINCIPAIS SERVIÇOS -->
+        <section id="servicos" class="servicos">
+            <h2>Nossos Principais Serviços</h2>
+
+            <!-- Card 1: Sobrancelha -->
+            <article class="card-servico">
+                <figure>
+                    <img src="imagens/sobrancelha.png" alt="Serviço de Sobrancelha">
+                </figure>
+                <h3>Sobrancelha</h3>
+                <h3 class="preco">R$ 15,00</h3>
+                <a href="pages/servicos.html" class="btn-servico">Ver Serviços</a>
+            </article>
+
+            <!-- Card 2: Barba -->
+            <article class="card-servico">
+                <figure>
+                    <img src="imagens/barba.png" alt="Serviço de Barba">
+                </figure>
+                <h3>Barba</h3>
+                <h3 class="preco">R$ 20,00</h3>
+                <a href="pages/servicos.html" class="btn-servico">Ver Serviços</a>
+            </article>
+
+            <!-- Card 3: Corte Degradê -->
+            <article class="card-servico">
+                <figure>
+                    <img src="imagens/corte-degradre.png" alt="Serviço de Corte Degradê">
+                </figure>
+                <h3>Corte Degradê</h3>
+                <h3 class="preco">R$ 45,00</h3>
+                <a href="pages/servicos.html" class="btn-servico">Ver Serviços</a>
+            </article>
+        </section>
+
+        <!-- SEÇÃO SOBRE A BARBER CLUB -->
+        <section id="sobre" class="sobre">
+            <article class="sobre-conteudo">
+                <h2>Sobre a Barber Club</h2>
+                <p>Na Barber Club, cada corte é mais do que um serviço: é uma experiência. Unimos estilo, precisão e cuidado para entregar um visual que combina com você.</p>
+
+                <ul class="diferenciais">
+                    <li>
+                        <h3>Cortes Personalizados</h3>
+                        <p>Estilos modernos e clássicos para o seu perfil.</p>
+                    </li>
+                    <li>
+                        <h3>Experiência Premium</h3>
+                        <p>Conforto e cuidado em cada atendimento.</p>
+                    </li>
+                    <li>
+                        <h3>Profissionais Qualificados</h3>
+                        <p>Técnica e experiência em cada detalhe.</p>
+                    </li>
+                    <li>
+                        <h3>Qualidade e Precisão</h3>
+                        <p>Acabamento impecável em cada corte.</p>
+                    </li>
+                </ul>
+
+                <a href="pages/planos.html" class="btn-planos">Nossos Planos</a>
+            </article>
+
+            <figure class="sobre-imagem">
+                <img src="imagens/sobre.png" alt="Barbeiro realizando um corte profissional com tesoura e pente.">
+            </figure>
+        </section>
+
+        <!-- SEÇÃO GALERIA / CORTES -->
+        <section id="galeria" class="galeria">
+            <h2>Cortes que falam por si.</h2>
+
+            <figure>
+                <img src="imagens/galeria/01.png" alt="Imagem">
+            </figure>
+            <figure>
+                <img src="imagens/galeria/02.png" alt="Imagem">
+            </figure>
+            <figure>
+                <img src="imagens/galeria/03.png" alt="Imagem">
+            </figure>
+            <figure>
+                <img src="imagens/galeria/04.png" alt="Imagem">
+            </figure>
+            <figure>
+                <img src="imagens/galeria/05.png" alt="Imagem">
+            </figure>
+            <figure>
+                <img src="imagens/galeria/06.png" alt="Imagem">
+            </figure>
+            <figure>
+                <img src="imagens/galeria/07.png" alt="Imagem">
+            </figure>
+        </section>
+    </main>
+
+
+
+
+    <footer class="footer">
+        <p class="footer-copy">© 2026 Barber Club — Todos os direitos reservados.</p>
+        <p>Contato: (21) 99999-9999 | contato@BarberClub.com.br</p>
+    </footer>
 </body>
 </html>

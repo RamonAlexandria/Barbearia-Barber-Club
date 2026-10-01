@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Oswald:wght@400;500;600&display=swap');
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+    background-color: #1C120B;
+}
+
+/* Header Container */
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #110B09;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Logo */
+header h1 {
+    font-family: 'Holtwood One SC', serif;
+    font-size: 30px;
+    color: #9A694E;
+    font-weight: 400;
+}
+
+/* Lista de navegação */
+header .nav-menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+/* Estilização padrão dos links */
+header .nav-menu ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+/* Efeito Hover nos links normais (cor #9A694E) */
+header .nav-menu ul li a:not(.btn-agendar):hover {
+    color: #9A694E;
+    text-decoration: underline;
+}
+
+/* Estilo do Botão "Agendar Horário" */
+header .btn-agendar {
+    display: inline-block;
+    background-color: #C39E4E;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    white-space: nowrap; /* Apenas isto foi adicionado ao botão */
+    transition: filter 0.3s ease;
+}
+
+/* Hover do Botão */
+header .btn-agendar:hover {
+    color: black;
+    background-color: #9A694E;
+}
+
+/* Esconde o checkbox real */
+.menu-toggle {
+    display: none;
+}
+
+/* Botão do Menu Hambúrguer (Oculto em desktop) */
+.mobile-menu-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.mobile-menu-icon span {
+    width: 100%;
+    height: 3px;
+    background-color: #9A694E;
+    border-radius: 2px;
+}
+
+/* -----------------------------------
+   RESPONSIVIDADE (MOBILE / TABLET)
+----------------------------------- */
+@media (max-width: 900px) {
+    header {
+        padding: 0 24px;
+    }
+
+    /* Exibe o ícone hambúrguer (label) */
+    .mobile-menu-icon {
+        display: flex;
+    }
+
+    /* Oculta o menu inicialmente no mobile */
+    header .nav-menu {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #110B09;
+        padding: 24px 0;
+        border-top: 1px solid rgba(154, 105, 78, 0.2);
+    }
+
+    /* TRUQUE DO CHECKBOX: Quando o checkbox for marcado, exibe o menu */
+    .menu-toggle:checked ~ .nav-menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    header .nav-menu ul {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    header .btn-agendar {
+        margin-top: 8px;
+    }
+}
+
+/*----------------------------FOOTER------------------------------------*/
+
+/*----------------------------ESTRUTURA BASE (PARA EMPURRAR O FOOTER)------------------------------------*/
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    width: 100%;
+    min-height: 80px;
+    background-color: #110B09;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto; /* Empurra o footer para o rodapé da página */
+}
+
+.footer p {
+    font-family: 'Oswald', sans-serif;
+    color: #9A694E;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Responsividade do Footer */
+@media (max-width: 900px) {
+    .footer {
+        padding: 24px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+        text-align: center;
+    }
+}
