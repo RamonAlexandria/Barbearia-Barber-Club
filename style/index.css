@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    color: #FFFFFF;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    width: 100%;
+}
+
+/* Tipografia Base */
+h1, h2, h3, h4, h5, h6, a, .btn-servico, .btn-planos, .btn-agendar {
+    font-family: 'Oswald', sans-serif;
+}
+
+p, span, li {
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-planos {
+    display: inline-block;
+    background-color: #C39E4E;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    white-space: nowrap;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-agendar:hover,
+.btn-planos:hover {
+    color: black;
+    background-color: #9A694E;
+}
+
+/* Botão dos Cards de Serviços (Mesmas cores do style.css + dimensões do Figma: 200x54) */
+.card-servico .btn-servico {
+    width: 200px;
+    height: 54px;
+    background-color: #C39E4E;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-servico .btn-servico:hover {
+    color: black;
+    background-color: #9A694E;
+}
+
+/* ==========================================================================
+   TÍTULOS DE SEÇÃO
+   ========================================================================== */
+.servicos h2,
+.galeria h2 {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    padding: 8px 24px;
+    border-radius: 8px;
+    border: 2px solid #C39E4E;
+    display: inline-block;
+    margin: 0 auto 40px auto;
+    text-transform: uppercase;
+}
+
+/* ==========================================================================
+   1. SEÇÃO HERO / BANNER PRINCIPAL
+   ========================================================================== */
+.hero {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero figure {
+    width: 100%;
+    margin: 0;
+}
+
+.hero figure img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+/* ==========================================================================
+   2. SEÇÃO NOSSOS PRINCIPAIS SERVIÇOS
+   ========================================================================== */
+.servicos {
+    padding: 60px 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.servicos-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.servicos .card-servico {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    border: 2px solid #C39E4E;
+    width: 353px;
+    height: 389px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicos .card-servico:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(195, 158, 78, 0.25);
+}
+
+.servicos .card-servico figure {
+    width: 100%;
+    height: 220px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.servicos .card-servico figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.servicos .card-servico h3 {
+    font-size: 20px;
+    color: #110B09;
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+.servicos .card-servico .preco {
+    font-size: 18px;
+    color: #27A04D;
+    margin: 4px 0 12px 0;
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   3. SEÇÃO SOBRE A BARBER CLUB
+   ========================================================================== */
+.sobre {
+    margin: 60px 80px;
+    width: calc(100% - 160px);
+    max-width: 1280px;
+    background-color: #1E1E1E;
+    border: 2px solid #C39E4E;
+    border-radius: 12px;
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+.sobre-conteudo {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-conteudo h2 {
+    font-size: 32px;
+    color: #9A694E;
+    margin-bottom: 16px;
+    font-weight: 700;
+    background: none;
+    border: none;
+    padding: 0;
+    text-transform: none;
+}
+
+.sobre-conteudo p {
+    font-size: 15px;
+    color: #FFFFFF;
+    line-height: 1.5;
+    margin-bottom: 28px;
+    max-width: 480px;
+}
+
+.diferenciais {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+    max-width: 480px;
+}
+
+.diferenciais li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.diferenciais li h3 {
+    font-size: 16px;
+    color: #C39E4E;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.diferenciais li p {
+    font-size: 15px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    line-height: 1.3;
+}
+
+.sobre-imagem {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ==========================================================================
+   4. SEÇÃO GALERIA / CORTES
+   ========================================================================== */
+.galeria {
+    padding: 60px 80px 120px 80px; /* Espaçamento inferior para afastar do footer */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    width: 100%;
+    max-width: 1280px;
+}
+
+.galeria-coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.galeria figure {
+    margin: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #C39E4E;
+    width: 100%;
+}
+
+.galeria figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.galeria figure:hover img {
+    transform: scale(1.03);
+}
+
+/* Alturas Exatas da Inspetoria do Figma */
+
+/* Coluna Esquerda: Topo = 340px | Base = 220px */
+.left-column .foto-top {
+    height: 340px;
+}
+.left-column .foto-bottom {
+    height: 220px;
+}
+
+/* Coluna Central: 3 fotos de 180px */
+.center-column figure {
+    height: 180px;
+}
+
+/* Coluna Direita: Topo = 340px | Base = 220px */
+.right-column .foto-top {
+    height: 340px;
+}
+.right-column .foto-bottom {
+    height: 220px;
+}
+
+
+/* ==========================================================================
+   RESPONSIVIDADE (MOBILE / TABLET)
+   ========================================================================== */
+@media (max-width: 1024px) {
+    .servicos-container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .servicos, .galeria {
+        padding: 40px 24px;
+    }
+
+    .sobre {
+        width: calc(100% - 48px);
+        margin: 40px 24px;
+        flex-direction: column;
+    }
+
+    .sobre-imagem {
+        width: 100%;
+        height: 350px;
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        padding: 0 24px;
+    }
+
+    .mobile-menu-icon {
+        display: flex;
+    }
+
+    header .nav-menu {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #110B09;
+        padding: 24px 0;
+        border-top: 1px solid rgba(154, 105, 78, 0.2);
+    }
+
+    .menu-toggle:checked ~ .nav-menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    header .nav-menu ul {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    header .btn-agendar {
+        margin-top: 8px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .diferenciais {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+}

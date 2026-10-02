@@ -6,7 +6,7 @@
     <title>Barbearia - Barber Club</title>
     <link rel="shortcut icon" href="favicon/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
     <header>
@@ -46,35 +46,35 @@
         <section id="servicos" class="servicos">
             <h2>Nossos Principais Serviços</h2>
 
-            <!-- Card 1: Sobrancelha -->
-            <article class="card-servico">
-                <figure>
-                    <img src="imagens/sobrancelha.png" alt="Serviço de Sobrancelha">
-                </figure>
-                <h3>Sobrancelha</h3>
-                <h3 class="preco">R$ 15,00</h3>
-                <a href="pages/servicos.html" class="btn-servico">Ver Serviços</a>
-            </article>
-
-            <!-- Card 2: Barba -->
-            <article class="card-servico">
-                <figure>
-                    <img src="imagens/barba.png" alt="Serviço de Barba">
-                </figure>
-                <h3>Barba</h3>
-                <h3 class="preco">R$ 20,00</h3>
-                <a href="pages/servicos.html" class="btn-servico">Ver Serviços</a>
-            </article>
-
-            <!-- Card 3: Corte Degradê -->
-            <article class="card-servico">
-                <figure>
-                    <img src="imagens/corte-degradre.png" alt="Serviço de Corte Degradê">
-                </figure>
-                <h3>Corte Degradê</h3>
-                <h3 class="preco">R$ 45,00</h3>
-                <a href="pages/servicos.html" class="btn-servico">Ver Serviços</a>
-            </article>
+            <aside class="servicos-container">
+                <!-- Card 1: Sobrancelha -->
+                <article class="card-servico">
+                    <figure>
+                        <img src="imagens/sobrancelha.png" alt="Serviço de Sobrancelha">
+                    </figure>
+                    <h3>Sobrancelha</h3>
+                    <h3 class="preco">R$ 15,00</h3>
+                    <a href="pages/servicos.html" class="btn-servico">Ver Serviços</a>
+                </article>
+                <!-- Card 2: Barba -->
+                <article class="card-servico">
+                    <figure>
+                        <img src="imagens/barba.png" alt="Serviço de Barba">
+                    </figure>
+                    <h3>Barba</h3>
+                    <h3 class="preco">R$ 20,00</h3>
+                    <a href="pages/servicos.html" class="btn-servico">Ver Serviços</a>
+                </article>
+                <!-- Card 3: Corte Degradê -->
+                <article class="card-servico">
+                    <figure>
+                        <img src="imagens/corte-degradre.png" alt="Serviço de Corte Degradê">
+                    </figure>
+                    <h3>Corte Degradê</h3>
+                    <h3 class="preco">R$ 45,00</h3>
+                    <a href="pages/servicos.html" class="btn-servico">Ver Serviços</a>
+                </article>
+            </aside>
         </section>
 
         <!-- SEÇÃO SOBRE A BARBER CLUB -->
@@ -114,32 +114,42 @@
         <section id="galeria" class="galeria">
             <h2>Cortes que falam por si.</h2>
 
-            <figure>
-                <img src="imagens/galeria/01.png" alt="Imagem">
-            </figure>
-            <figure>
-                <img src="imagens/galeria/02.png" alt="Imagem">
-            </figure>
-            <figure>
-                <img src="imagens/galeria/03.png" alt="Imagem">
-            </figure>
-            <figure>
-                <img src="imagens/galeria/04.png" alt="Imagem">
-            </figure>
-            <figure>
-                <img src="imagens/galeria/05.png" alt="Imagem">
-            </figure>
-            <figure>
-                <img src="imagens/galeria/06.png" alt="Imagem">
-            </figure>
-            <figure>
-                <img src="imagens/galeria/07.png" alt="Imagem">
-            </figure>
+            <article class="galeria-grid">
+                <!-- left-column -->
+                <section class="galeria-coluna left-column">
+                    <figure class="foto-top">
+                        <img src="imagens/galeria/01.png" alt="Corte de cabelo 1">
+                    </figure>
+                    <figure class="foto-bottom">
+                        <img src="imagens/galeria/02.png" alt="Corte de cabelo 2">
+                    </figure>
+                </section>
+
+                <!-- center-column -->
+                <section class="galeria-coluna center-column">
+                    <figure>
+                        <img src="imagens/galeria/03.png" alt="Corte de cabelo 3">
+                    </figure>
+                    <figure>
+                        <img src="imagens/galeria/04.png" alt="Corte de cabelo 4">
+                    </figure>
+                    <figure>
+                        <img src="imagens/galeria/05.png" alt="Corte de cabelo 5">
+                    </figure>
+                </section>
+
+                <!-- right-column -->
+                <section class="galeria-coluna right-column">
+                    <figure class="foto-top">
+                        <img src="imagens/galeria/06.png" alt="Corte de cabelo 6">
+                    </figure>
+                    <figure class="foto-bottom">
+                        <img src="imagens/galeria/07.png" alt="Corte de cabelo 7">
+                    </figure>
+                </section>
+            </article>
         </section>
     </main>
-
-
-
 
     <footer class="footer">
         <p class="footer-copy">© 2026 Barber Club — Todos os direitos reservados.</p>
