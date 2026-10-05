@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia - Barber Club</title>
+    <link rel="shortcut icon" href="../favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/servicos.css">
+</head>
+<body>
+    <header>
+        <h1>BARBER CLUB</h1>
+
+        <!-- Checkbox invisível para controlar o estado do menu -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+        <!-- Label que funciona como o botão do menu hambúrguer -->
+        <label for="menu-toggle" class="mobile-menu-icon" aria-label="Abrir Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- Navegação principal -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="profissionais.html">Profissionais</a></li>
+                <li><a href="planos.html">Planos</a></li>
+                <li><a href="agendamento.html" class="btn-agendar">Agendar Horário</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="servicos-section">
+            <h1 class="titulo-servicos">Nossos Serviços</h1>
+            <article class="card-combo">
+                <img src="../imagens/combo-destaque.png" alt="Combo Completo: Corte, Barba e Sobrancelha">
+                <section class="combo-info">
+                    <h2>Conheça nosso Combo</h2>
+                    <h3 class="subtitulo-combo">Seu visual completo em um só lugar.</h3>
+                    <p>Combine corte, barba e sobrancelha em uma experiência completa para renovar seu estilo.</p>
+                    <a href="agendamento.html" class="btn-agendar">Agendar Horário</a>
+                    <h3 class="preco">R$60,00</h3>
+                </section>
+            </article>
+
+            <aside class="servicos-container">
+                <!-- Card 1: Sobrancelha -->
+                <article class="card-servico">
+                    <figure>
+                        <img src="../imagens/sobrancelha.png" alt="Serviço de Sobrancelha">
+                    </figure>
+                    <h3>Sobrancelha</h3>
+                    <h3 class="preco">R$ 15,00</h3>
+                    <a href="agendamento.html" class="btn-servico">Agendar Horário</a>
+                </article>
+                <!-- Card 2: Barba -->
+                <article class="card-servico">
+                    <figure>
+                        <img src="../imagens/barba.png" alt="Serviço de Barba">
+                    </figure>
+                    <h3>Barba</h3>
+                    <h3 class="preco">R$ 20,00</h3>
+                    <a href="agendamento.html" class="btn-servico">Agendar Horário</a>
+                </article>
+                <!-- Card 3: Corte Degradê -->
+                <article class="card-servico">
+                    <figure>
+                        <img src="../imagens/corte-degradre.png" alt="Serviço de Corte Degradê">
+                    </figure>
+                    <h3>Corte Degradê</h3>
+                    <h3 class="preco">R$ 45,00</h3>
+                    <a href="agendamento.html" class="btn-servico">Agendar Horário</a>
+                </article>
+            </aside>
+        </section>
+
+        <section class="detalhes-section">
+            <h2>Detalhes dos Nossos Serviços</h2>
+            <h3>Cada serviço é executado com técnicas profissionais e produtos de alta qualidade.</h3>
+
+            <!-- Card Detalhe 1: Corte Degradê Premium -->
+            <article class="card-detalhe">
+                <figure>
+                    <img src="../imagens/detalhes-degrade.png" alt="Corte Degradê Premium em execução">
+                </figure>
+                <section class="detalhe-info">
+                    <h3>Corte Degradê Premium</h3>
+                    <p class="meta-info"><span class="preco-detalhe">R$ 45,00</span> • <span class="duracao">45 minutos</span></p>
+                    <p>Técnica de degradê de alta precisão adaptada ao seu formato de rosto. Inclui higienização dos fios, corte na tesoura e máquina com acabamento perfeito na navalha e finalização com pomada.</p>
+                    <h4>O que inclui:</h4>
+                    <ul>
+                        <li>Atendimento personalizado e consultoria de estilo</li>
+                        <li>Lavagem capilar com shampoo refrescante</li>
+                        <li>Corte com tesoura e máquina de precisão</li>
+                        <li>Finalização com pomada ou spray modelador</li>
+                        <li>Acabamento na navalha para contornos definidos</li>
+                    </ul>
+                    <a href="agendamento.html" class="btn-agendar">Agendar Horário</a>
+                </section>
+            </article>
+
+            <!-- Card Detalhe 2: Barba Modelada Completa -->
+            <article class="card-detalhe card-invertido">
+                <section class="detalhe-info">
+                    <h3>Barba Modelada Completa</h3>
+                    <p class="meta-info"><span class="preco-detalhe">R$ 20,00</span> • <span class="duracao">30 minutos</span></p>
+                    <p>Modelagem profissional com toalha quente, navalha e produtos premium. Cuidamos de cada detalhe para realçar as linhas do seu rosto sem provocar irritações.</p>
+                    <h4>O que inclui:</h4>
+                    <ul>
+                        <li>Aplicação de óleo pré-barba para amolecer os fios</li>
+                        <li>Barboterapia com toalha quente relaxante</li>
+                        <li>Modelagem com tesoura e máquina para alinhar</li>
+                        <li>Alinhamento e contorno com navalha</li>
+                        <li>Aplicação de pós-barba hidratante</li>
+                    </ul>
+                    <a href="agendamento.html" class="btn-agendar">Agendar Horário</a>
+                </section>
+                <figure>
+                    <img src="../imagens/detalhes-barba.png" alt="Barba Modelada Completa em execução">
+                </figure>
+            </article>
+
+            <!-- Card Detalhe 3: Sobrancelha Design Masculino -->
+            <article class="card-detalhe">
+                <figure>
+                    <img src="../imagens/detalhes-sobrancelha.png" alt="Design de Sobrancelha Masculino em execução">
+                </figure>
+                <section class="detalhe-info">
+                    <h3>Sobrancelha Design Masculino</h3>
+                    <p class="meta-info"><span class="preco-detalhe">R$ 15,00</span> • <span class="duracao">15 minutos</span></p>
+                    <p>Design de sobrancelha exclusivo para o público masculino. Limpeza com pinça e navalha que mantém a naturalidade, definindo o olhar sem exageros.</p>
+                    <h4>O que inclui:</h4>
+                    <ul>
+                        <li>Análise do formato ideal para o seu rosto</li>
+                        <li>Remoção com pinça de precisão</li>
+                        <li>Acabamento com navalha nos contornos</li>
+                        <li>Aplicação de produto para aliviar a vermelhidão</li>
+                    </ul>
+                    <a href="agendamento.html" class="btn-agendar">Agendar Horário</a>
+                </section>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-copy">© 2026 Barber Club — Todos os direitos reservados.</p>
+        <p>Contato: (21) 99999-9999 | contato@BarberClub.com.br</p>
+    </footer>
+</body>
+</html>

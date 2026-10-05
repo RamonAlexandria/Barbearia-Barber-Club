@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* --- Reset e Globais --- */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* --- Container Principal --- */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 80px 80px 80px; /* Igual ao padding das seções em servicos.css */
+    box-sizing: border-box;
+}
+
+/* --- Título Principal --- */
+.titulo {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+    width: fit-content;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 28px;
+    border-radius: 8px;
+    border: 2px solid #C39E4E;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+/* --- Lista e Grid de Profissionais --- */
+.lista-profissionais {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    max-width: 1280px;
+    box-sizing: border-box;
+}
+
+.lista-profissionais > li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Card do Profissional --- */
+.c1 {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    border: 2px solid #C39E4E;
+    width: 353px;
+    height: 389px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.c1:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(195, 158, 78, 0.25);
+}
+
+.c1 figure {
+    width: 100%;
+    height: 220px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.c1 figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.c1 h2 {
+    font-size: 20px;
+    color: #110B09;
+    margin: 12px 0 4px 0;
+    font-weight: 600;
+    text-align: center;
+}
+
+.c1 p {
+    font-size: 14px;
+    color: #000000;
+    margin: 0 10px;
+    text-align: center;
+}
+
+/* --- Botão Ver Perfil --- */
+.btn {
+    font-family: 'Oswald', sans-serif;
+    width: 200px;
+    height: 54px;
+    background-color: #C39E4E;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    color: #000000;
+    background-color: #9A694E;
+}
+
+/* --- Responsividade ---*/
+@media (max-width: 1200px) {
+    .container {
+        padding: 20px 40px 60px 40px;
+    }
+
+    .lista-profissionais {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 20px 40px 20px;
+    }
+
+    .titulo {
+        font-size: 24px;
+        margin-bottom: 30px;
+        padding: 10px 20px;
+    }
+
+    .lista-profissionais {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .c1 {
+        width: 100%;
+        max-width: 353px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 16px 12px 30px 12px;
+    }
+
+    .titulo {
+        font-size: 20px;
+        padding: 8px 16px;
+    }
+}

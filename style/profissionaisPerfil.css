@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+/* Regras gerais de tipografia */
+main h1, 
+main h2, 
+main h3 {
+    font-family: 'Oswald', sans-serif;
+    color: #000000;
+}
+
+main p, 
+main ul, 
+main li {
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+}
+
+/* Container Principal (<main>) */
+main {
+    box-sizing: border-box;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Foto do Perfil */
+main figure {
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+main figure img {
+    width: 380px;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #C39E4E;
+    box-sizing: border-box;
+    display: block;
+}
+
+/* Container de Conteúdo (<article>) usando Grid de 2 colunas */
+main article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 860px;
+    max-width: 100%;
+}
+
+/* Card Principal (#c1) ocupa as 2 colunas no topo */
+main article #c1 {
+    grid-column: 1 / -1;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    border: 2px solid #C39E4E;
+    padding: 24px 32px;
+    box-sizing: border-box;
+}
+
+main article #c1 h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+}
+
+main article #c1 .section01 {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 6px 0;
+}
+
+main article #c1 .section01:last-child {
+    margin-bottom: 0;
+}
+
+main article #c2,
+main article #c3 {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    border: 2px solid #C39E4E;
+    padding: 20px 24px;
+    box-sizing: border-box;
+}
+
+main article #c2 h2,
+main article #c3 h2 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+/* Listas da Formação Acadêmica e Especialidades */
+main article ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+main article ul li {
+    margin-bottom: 6px;
+}
+
+main article ul li p {
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Botão Agendar Horário ocupando a última linha */
+main article .btn-agendar-perfil {
+    font-family: 'Oswald', sans-serif;
+    width: 200px;
+    height: 54px;
+    background-color: #C39E4E;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main article .btn-agendar-perfil:hover {
+    color: #000000;
+    background-color: #9A694E;
+}
+
+@media (max-width: 1024px) {
+    /* Ajusta as margens laterais do main em telas menores */
+    main {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 24px;
+        padding-bottom: 40px;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    /* Imagem de perfil adapta a largura e mantém proporção */
+    main figure {
+        width: 100%;
+        max-width: 380px;
+    }
+
+    main figure img {
+        width: 100%;
+        height: auto;
+        max-height: 430px;
+    }
+
+    /* Garante que o article ocupe toda a largura disponível */
+    main article {
+        width: 100%;
+        gap: 16px;
+    }
+
+    /* Padding ajustado nos cards para telas menores */
+    main article #c1 {
+        padding: 20px 16px;
+    }
+
+    main article #c1 h1 {
+        font-size: 24px;
+    }
+
+    /* Em telas abaixo de 768px os cards de formação e especialidades empilham */
+    @media (max-width: 768px) {
+        main article {
+            grid-template-columns: 1fr;
+        }
+
+        main article #c2,
+        main article #c3 {
+            padding: 16px;
+        }
+
+        main article a.btn-agendar-perfil {
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+    }
+}

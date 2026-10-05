@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* ==========================================================================
+   TIPOGRAFIA BASE & RESET
+   ========================================================================== */
+body, p, li {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, a, button {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* ==========================================================================
+   TÍTULOS E SUBTÍTULOS DE SEÇÃO (AJUSTAM-SE AO CONTEÚDO DO TEXTO)
+   ========================================================================== */
+
+/* Caixa "NOSSOS SERVIÇOS" */
+.titulo-servicos {
+    font-family: 'Oswald', sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    
+    width: fit-content;
+    max-width: 90%;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 28px;
+    
+    border-radius: 8px;
+    border: 2px solid #C39E4E;
+    margin: 0 auto 30px auto;
+    text-transform: uppercase;
+}
+
+/* Caixa "Detalhes dos Nossos Serviços" */
+.detalhes-section > h2 {
+    font-family: 'Oswald', sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    
+    width: fit-content;
+    max-width: 90%;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 28px;
+    
+    border-radius: 8px;
+    border: 2px solid #C39E4E;
+    margin: 0 auto 16px auto;
+}
+
+/* Subtítulo "Cada serviço é executado..." */
+.detalhes-section > h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 2px solid #C39E4E;
+    border-radius: 8px;
+    
+    width: fit-content;
+    max-width: 90%;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    
+    font-weight: 500;
+    margin: 0 auto 40px auto;
+}
+
+/* ==========================================================================
+   1. SEÇÃO PRINCIPAL DE SERVIÇOS & COMBO
+   ========================================================================== */
+.servicos-section {
+    padding: 20px 80px 50px 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Card Destaque: Combo */
+.servicos-section .card-combo {
+    width: 100%;
+    max-width: 1280px;
+    background-color: #1E1E1E;
+    border: 2px solid #C39E4E;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.card-combo img {
+    width: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.combo-info {
+    width: 50%;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.combo-info h2 {
+    font-size: 32px;
+    color: #9A694E;
+    margin: 0 0 6px 0;
+    font-weight: 700;
+}
+
+.combo-info .subtitulo-combo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    color: #C39E4E;
+    margin: 0 0 16px 0;
+    font-weight: 500;
+}
+
+.combo-info p {
+    font-size: 15px;
+    color: #FFFFFF;
+    line-height: 1.5;
+    margin: 0 0 24px 0;
+    max-width: 440px;
+}
+
+.combo-info .btn-agendar {
+    font-family: 'Oswald', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C39E4E;
+    color: #FFFFFF;
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.combo-info .btn-agendar:hover {
+    color: #000000;
+    background-color: #9A694E;
+}
+
+.combo-info .preco {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: #0E9F6E;
+    margin: 16px 0 0 0;
+    font-weight: 700;
+}
+
+/* Container dos Cards de Serviços */
+.servicos-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.card-servico {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    border: 2px solid #C39E4E;
+    width: 353px;
+    height: 389px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-servico:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(195, 158, 78, 0.25);
+}
+
+.card-servico figure {
+    width: 100%;
+    height: 220px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.card-servico figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-servico h3 {
+    font-size: 20px;
+    color: #110B09;
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+.card-servico .preco {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: #0E9F6E;
+    margin: 4px 0 12px 0;
+    font-weight: 700;
+}
+
+.card-servico .btn-servico {
+    font-family: 'Oswald', sans-serif;
+    width: 200px;
+    height: 54px;
+    background-color: #C39E4E;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-servico .btn-servico:hover {
+    color: #000000;
+    background-color: #9A694E;
+}
+
+/* ==========================================================================
+   2. SEÇÃO DETALHES DOS NOSSOS SERVIÇOS
+   ========================================================================== */
+.detalhes-section {
+    padding: 20px 80px 80px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.detalhes-section .card-detalhe {
+    width: 100%;
+    max-width: 1280px;
+    min-height: 480px;
+    background-color: #1A1A1A;
+    border: 2px solid #C39E4E;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.detalhes-section .card-detalhe.card-invertido {
+    flex-direction: row-reverse;
+}
+
+.card-detalhe figure {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.card-detalhe figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left center;
+    display: block;
+}
+
+.detalhe-info {
+    width: 50%;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.detalhe-info h3 {
+    font-size: 26px;
+    color: #9A694E;
+    margin: 0 0 6px 0;
+    font-weight: 700;
+}
+
+.detalhe-info .meta-info {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    margin: 0 0 14px 0;
+    font-weight: 700;
+}
+
+.detalhe-info .preco-detalhe,
+.detalhe-info .duracao {
+    font-family: 'Oswald', sans-serif;
+    color: #0E9F6E;
+    font-weight: 700;
+}
+
+.detalhe-info p {
+    font-size: 14px;
+    color: #E0E0E0;
+    line-height: 1.5;
+    margin: 0 0 16px 0;
+    max-width: 500px;
+}
+
+.detalhe-info h4 {
+    font-size: 16px;
+    color: #C39E4E;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+.detalhe-info ul {
+    list-style: none;
+    margin: 0 0 20px 0;
+    padding-left: 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.detalhe-info ul li {
+    font-size: 14px;
+    color: #DDDDDD;
+    margin-bottom: 6px;
+    position: relative;
+    padding-left: 22px;
+}
+
+.detalhe-info ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #C39E4E;
+    font-weight: bold;
+}
+
+.detalhe-info .btn-agendar {
+    font-family: 'Oswald', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C39E4E;
+    color: #FFFFFF;
+    padding: 12px 36px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.detalhe-info .btn-agendar:hover {
+    color: #000000;
+    background-color: #9A694E;
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE (MOBILE / TABLET)
+   ========================================================================== */
+@media (max-width: 1024px) {
+    .servicos-section,
+    .detalhes-section {
+        padding: 20px 16px;
+    }
+
+    .servicos-container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* Encadeamento de seletores com especificidade sem necessidade de !important */
+    .servicos-section .card-combo,
+    .detalhes-section .card-detalhe,
+    .detalhes-section .card-detalhe.card-invertido {
+        flex-direction: column;
+        height: auto;
+        min-height: 0;
+    }
+
+    .card-combo img,
+    .combo-info,
+    .card-detalhe figure,
+    .detalhe-info {
+        width: 100%;
+    }
+
+    .card-detalhe figure {
+        height: 240px;
+        min-height: 240px;
+    }
+
+    .card-detalhe figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .detalhe-info {
+        padding: 24px 16px;
+    }
+
+    .detalhes-section > h2 {
+        font-size: 22px;
+        padding: 8px 16px;
+    }
+
+    .detalhes-section > h3 {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}

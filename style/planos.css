@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+main h1,
+main h2,
+main h3,
+main h4,
+main a,
+main span {
+    font-family: 'Oswald', sans-serif;
+}
+
+main p,
+main li {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ==========================================================================
+   ESTRUTURA PRINCIPAL (<main>)
+   ========================================================================== */
+main {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 80px 60px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+/* ==========================================================================
+   1. SEÇÃO DE PLANOS INDIVIDUAIS
+   ========================================================================== */
+.planos-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.planos-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.planos-header h1 {
+    background-color: #FFFFFF;
+    color: #1E1E1E;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 12px 28px;
+    border-radius: 8px;
+    border: 2px solid #C39E4E;
+    margin: 0;
+    text-align: center;
+}
+
+/* Cards dos Planos Individuais */
+.card-plano {
+    background-color: #FFFFFF;
+    border: 2px solid #C39E4E;
+    border-radius: 12px;
+    width: 353px;
+    min-height: 389px;
+    padding: 24px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-plano h2 {
+    color: #1E1E1E;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 4px 0;
+    text-transform: uppercase;
+}
+
+.card-plano .subtitulo-plano {
+    font-family: 'Roboto', sans-serif;
+    color: #1E1E1E;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 0 16px 0;
+}
+
+.card-plano .preco-plano {
+    font-family: 'Roboto', sans-serif;
+    color: #1E1E1E;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 4px;
+}
+
+.card-plano .preco-plano span {
+    font-family: 'Oswald', sans-serif;
+    color: #0E9F6E;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card-plano hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #E0E0E0;
+    margin: 0 0 20px 0;
+}
+
+.card-plano ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 28px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-plano ul li p {
+    font-family: 'Roboto', sans-serif;
+    color: #1E1E1E;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+/* Estilização específica do marcador "✓" */
+span.check {
+    color: #C39E4E;
+    font-weight: 700;
+}
+
+/* Botão "Escolher Plano" */
+.btn-escolher-plano {
+    background-color: #C39E4E;
+    color: #FFFFFF;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: none;
+    width: 200px;
+    height: 54px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    margin-top: auto;
+}
+
+.btn-escolher-plano:hover {
+    background-color: #9A694E;
+    color: #000000;
+}
+
+/* ==========================================================================
+   2. SEÇÃO COMBO COMPLETO (DESTAQUE)
+   ========================================================================== */
+.combo-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-combo-completo {
+    background-color: #1A1A1A;
+    border: 2px solid #C39E4E;
+    border-radius: 12px;
+    width: 100%;
+    min-height: 420px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.card-combo-completo figure {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    flex-shrink: 0;
+}
+
+.card-combo-completo figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.combo-info {
+    width: 50%;
+    padding: 32px 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.combo-info h2 {
+    color: #9A694E;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+}
+
+.combo-info .subtitulo-combo {
+    color: #C39E4E;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}
+
+.combo-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.combo-info ul li p {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.combo-info .preco-combo {
+    color: #0E9F6E;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 12px 0 0 0;
+}
+
+/* ==========================================================================
+   3. RESPONSIVIDADE (MOBILE / TABLET)
+   ========================================================================== */
+@media (max-width: 1024px) {
+    main {
+        padding: 30px 20px 40px 20px;
+        gap: 32px;
+    }
+
+    .card-combo-completo {
+        flex-direction: column;
+    }
+
+    .card-combo-completo figure,
+    .combo-info {
+        width: 100%;
+    }
+
+    .card-combo-completo figure img {
+        height: 240px;
+    }
+
+    .combo-info {
+        padding: 24px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .planos-header h1 {
+        font-size: 22px;
+        padding: 10px 20px;
+    }
+
+    .card-plano {
+        width: 100%;
+        max-width: 353px;
+    }
+}

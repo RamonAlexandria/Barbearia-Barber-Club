@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia - Barber Club</title>
+    <link rel="shortcut icon" href="../favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/profissionais.css">
+</head>
+<body>
+    <header>
+        <h1>BARBER CLUB</h1>
+
+        <!-- Checkbox invisível para controlar o estado do menu -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+        <!-- Label que funciona como o botão do menu hambúrguer -->
+        <label for="menu-toggle" class="mobile-menu-icon" aria-label="Abrir Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- Navegação principal -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="profissionais.html">Profissionais</a></li>
+                <li><a href="planos.html">Planos</a></li>
+                <li><a href="agendamento.html" class="btn-agendar">Agendar Horário</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <h1 class="titulo">Conheça Nossos Profissionais</h1>
+            
+            <!-- Lista semântica para os cards de profissionais -->
+            <ul class="lista-profissionais">
+                <li>
+                    <article class="c1">
+                        <figure>
+                            <img src="../imagens/profissionais-felipe.png" alt="Barbeiro Felipe">
+                        </figure>
+                        <h2>Barbeiro: Felipe Silva</h2>
+                        <p>Estilos modernos e clássicos.</p>
+                        <a href="profissionaisPerfil.html" class="btn">Ver Perfil</a>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="c1">
+                        <figure>
+                            <img src="../imagens/profissionais-yuri.png" alt="Barbeiro Yuri">
+                        </figure>
+                        <h2>Barbeiro: Yuri Lima</h2>
+                        <p>Acabamento impecável em cada corte.</p>
+                        <a href="profissionaisPerfil.html" class="btn">Ver Perfil</a>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="c1">
+                        <figure>
+                            <img src="../imagens/profissionais-paulo.png" alt="Barbeiro Paulo">
+                        </figure>
+                        <h2>Barbeiro: Paulo Costa</h2>
+                        <p>Especialista em fade e barbear com navalha.</p>
+                        <a href="profissionaisPerfil.html" class="btn">Ver Perfil</a>
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-copy">© 2026 Barber Club — Todos os direitos reservados.</p>
+        <p>Contato: (21) 99999-9999 | contato@BarberClub.com.br</p>
+    </footer>
+</body>
+</html>
