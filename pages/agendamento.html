@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia - Barber Club</title>
+    <link rel="shortcut icon" href="../favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/agendamento.css">
+</head>
+<body>
+    <header>
+        <h1>BARBER CLUB</h1>
+
+        <!-- Checkbox invisível para controlar o estado do menu -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+        <!-- Label que funciona como o botão do menu hambúrguer -->
+        <label for="menu-toggle" class="mobile-menu-icon" aria-label="Abrir Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- Navegação principal -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="profissionais.html">Profissionais</a></li>
+                <li><a href="planos.html">Planos</a></li>
+                <li><a href="agendamento.html" class="btn-agendar">Agendar Horário</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+<section class="agendamento-container">
+        <header class="agendamento-pill">
+            <h2>Agendamento</h2>
+        </header>
+
+        <article class="agendamento-card">
+            <header class="card-titulo">
+                <h3>Marque Seu Horário</h3>
+            </header>
+
+            <form action="#" method="POST" class="form-agendamento">
+                <p class="form-group">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                </p>
+
+                <!-- E-mail -->
+                <p class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </p>
+
+                <p class="form-group">
+                    <label for="servico">Serviço desejado</label>
+                    <select id="servico" name="servico" required>
+                        <option value="" disabled selected>Selecione um serviço</option>
+                        <option value="corte">Corte de Cabelo</option>
+                        <option value="barba">Barba</option>
+                        <option value="combo">Sobrancelha</option>
+                        <option value="sobrancelha">Combo</option>
+                    </select>
+                </p>
+
+                <fieldset class="form-row">
+                    <p class="form-group">
+                        <label for="data">Data</label>
+                        <input type="date" id="data" name="data" required>
+                    </p>
+
+                    <p class="form-group">
+                        <label for="horario">Horário</label>
+                        <input type="time" id="horario" name="horario" required>
+                    </p>
+                </fieldset>
+
+                <button type="submit" class="btn-confirmar">Confirmar Agendamento</button>
+            </form>
+        </article>
+    </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-copy">© 2026 Barber Club — Todos os direitos reservados.</p>
+        <p>Contato: (21) 99999-9999 | contato@BarberClub.com.br</p>
+    </footer>
+</body>
+</html>

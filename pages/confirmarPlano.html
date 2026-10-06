@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia - Barber Club</title>
+    <link rel="shortcut icon" href="../favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/confirmarPlano.css">
+</head>
+<body>
+    <header>
+        <h1>BARBER CLUB</h1>
+
+        <!-- Checkbox invisível para controlar o estado do menu -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+        <!-- Label que funciona como o botão do menu hambúrguer -->
+        <label for="menu-toggle" class="mobile-menu-icon" aria-label="Abrir Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- Navegação principal -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="profissionais.html">Profissionais</a></li>
+                <li><a href="planos.html">Planos</a></li>
+                <li><a href="agendamento.html" class="btn-agendar">Agendar Horário</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="plano-container">
+            <header class="plano-pill">
+                <h2>Escolher Plano</h2>
+            </header>
+
+            <article class="plano-card">
+                <header class="card-titulo">
+                    <h3>Escolha e Confirme Seu Plano</h3>
+                </header>
+
+                <form action="#" method="POST" class="form-plano">
+                    <p class="form-group">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                    </p>
+
+                    <p class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    </p>
+
+                    <!-- Plano desejado -->
+                    <p class="form-group">
+                        <label for="plano">Plano desejado</label>
+                        <select id="plano" name="plano" required>
+                            <option value="" disabled selected>Selecione um plano</option>
+                            <option value="Sobrancelha">Plano Sobrancelha</option>
+                            <option value="Barba">Plano Barba</option>
+                            <option value="Corte">Plano Corte</option>
+                            <option value="Combo">Plano Combo</option>
+                        </select>
+                    </p>
+
+                    <fieldset class="form-row-single">
+                        <p class="form-group meia-largura">
+                            <label for="vencimento">Data de vencimento</label>
+                            <input type="date" id="vencimento" name="vencimento" required>
+                        </p>
+                    </fieldset>
+
+                    <button type="submit" class="btn-confirmar">Confirmar Plano</button>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-copy">© 2026 Barber Club — Todos os direitos reservados.</p>
+        <p>Contato: (21) 99999-9999 | contato@BarberClub.com.br</p>
+    </footer>
+</body>
+</html>

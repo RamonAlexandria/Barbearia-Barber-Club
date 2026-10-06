@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;500&display=swap');
+
+/* 1. Container Principal da Seção (Força Alinhamento Vertical Centralizado) */
+main section.agendamento-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 20px 60px 20px;
+    box-sizing: border-box;
+    float: none;
+    clear: both;
+}
+
+/* 2. Pílula Superior "Agendamento" */
+main section.agendamento-container header.agendamento-pill {
+    background-color: #FFFFFF;
+    border: 2px solid #C39E4E;
+    border-radius: 8px;
+    padding: 6px 36px;
+    margin: 0 0 20px 0;
+    width: auto;
+    max-width: fit-content;
+    height: auto;
+    position: static;
+    box-shadow: none;
+    display: block;
+    float: none;
+}
+
+main section.agendamento-container header.agendamento-pill h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: transparent;
+    line-height: 1.2;
+}
+
+/* 3. Card Branco Central */
+main section.agendamento-container article.agendamento-card {
+    background-color: #FFFFFF;
+    border: 2px solid #C39E4E;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    padding: 32px 36px;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    float: none;
+}
+
+main section.agendamento-container article.agendamento-card header.card-titulo {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    height: auto;
+    position: static;
+    box-shadow: none;
+    width: 100%;
+    display: block;
+    float: none;
+}
+
+main section.agendamento-container article.agendamento-card header.card-titulo h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+/* 4. Formulário e Campos */
+form.form-agendamento {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+p.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: transparent;
+}
+
+p.form-group label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #333333;
+    display: block;
+}
+
+/* Inputs e Select */
+form.form-agendamento input,
+form.form-agendamento select {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    padding: 12px 14px;
+    background-color: #F0F4F8;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #333333;
+    outline: none;
+    box-sizing: border-box;
+    height: 42px;
+}
+
+form.form-agendamento input:focus,
+form.form-agendamento select:focus {
+    border-color: #C39E4E;
+    background-color: #FFFFFF;
+}
+
+/* 5. Linha de Data e Horário */
+fieldset.form-row {
+    display: flex;
+    gap: 16px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background: transparent;
+}
+
+fieldset.form-row p.form-group {
+    flex: 1;
+}
+
+button.btn-confirmar {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    background-color: #C39E4E;
+    border: none;
+    border-radius: 6px;
+    padding: 14px;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+    transition: background-color 0.2s ease;
+    display: block;
+}
+
+button.btn-confirmar:hover {
+    background-color: #9A694E;
+    color: black;
+}
